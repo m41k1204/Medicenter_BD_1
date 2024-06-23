@@ -1,0 +1,171 @@
+
+Para traducir estas reglas semánticas en un modelo relacional con tablas, primero identificaremos las entidades y sus atributos, y luego estableceremos las relaciones entre ellas. Aquí está el modelo relacional basado en las reglas proporcionadas:
+
+Tablas del Modelo Relacional
+Policlínico
+
+Atributos:
+id_policlinico (PK)
+nombre
+SalaOperacionesAmbulatoria
+
+Atributos:
+id_sala (PK)
+id_policlinico (FK)
+tipo
+ConsultorioDoctor
+
+Atributos:
+id_consultorio (PK)
+id_policlinico (FK)
+nombre_doctor
+CuartoChequeo
+
+Atributos:
+id_cuarto (PK)
+id_policlinico (FK)
+tipo
+Paciente
+
+Atributos:
+dni (PK)
+nombre
+apellido
+edad
+Doctor
+
+Atributos:
+dni (PK)
+nombre
+apellido
+edad
+especialidad
+Interno
+
+Atributos:
+dni (PK)
+nombre
+apellido
+edad
+especialidad (NULL para internos)
+Enfermera
+
+Atributos:
+nombre (PK)
+edad
+ano
+dni
+InsumoMedico
+
+Atributos:
+id_insumo (PK)
+nombre
+cantidad_disponible
+InstrumentalMedico
+
+Atributos:
+serial (PK)
+nombre
+marca
+material
+Operacion
+
+Atributos:
+id_operacion (PK)
+fecha
+hora
+id_doctor (FK)
+id_interno (FK)
+dni_enfermera (FK)
+id_instrumental (FK)
+Consulta
+
+Atributos:
+id_consulta (PK)
+fecha
+hora
+dni_doctor (FK)
+dni_interno (FK)
+dni_paciente
+dni_secretaria
+Secretaria
+
+Atributos:
+dni (PK)
+nombre
+apellido
+edad
+Gerencia
+
+Atributos:
+dni_gerente (PK)
+dni_analista
+id_policlinico (FK)
+CompraInsumos
+
+Atributos:
+id_compra (PK)
+fecha
+id_insumo (FK)
+cantidad
+AlquilerInstrumental
+
+Atributos:
+id_alquiler (PK)
+id_instrumental (FK)
+fecha
+id_operacion (FK)
+Pago
+
+Atributos:
+id_pago (PK)
+fecha
+monto
+codigo_actividad
+Relaciones
+Policlínico -> SalaOperacionesAmbulatoria
+
+Uno a uno
+Policlínico -> ConsultorioDoctor
+
+Uno a uno
+Policlínico -> CuartoChequeo
+
+Uno a muchos
+Doctor -> Operacion
+
+Uno a muchos
+Interno -> Operacion
+
+Uno a muchos
+Enfermera -> Operacion
+
+Uno a muchos
+Operacion -> InsumoMedico
+
+Muchos a muchos (a través de una tabla de relación)
+Operacion -> InstrumentalMedico
+
+Uno a uno (o muchos a uno si se reutiliza en varias operaciones)
+Consulta -> Secretaria
+
+Uno a uno
+Consulta -> Paciente
+
+Uno a uno (o uno a muchos si un paciente tiene múltiples consultas)
+Gerencia -> CompraInsumos
+
+Uno a muchos
+Gerencia -> AlquilerInstrumental
+
+Uno a muchos
+Gerencia -> Operacion
+
+Uno a muchos
+Pago -> Consulta
+
+Uno a uno
+Pago -> Operacion
+
+Uno a uno
+Este es un esquema básico que refleja la estructura de la base de datos según las reglas semánticas proporcionadas. Los identificadores primarios (PK) y las claves foráneas (FK) ayudarán a definir las relaciones entre las tablas para mantener la integridad referencial y gestionar adecuadamente las operaciones y consultas dentro del policlínico.
