@@ -157,7 +157,7 @@ for i in range(1000000):
             break
     material = fake.word()
     marca = fake.company()
-    costo_por_unidad = round(random.uniform(10, 1000), 2)
+    costo_por_unidad = round(random.uniform(10, 100), 2)
     nombre_insumo = fake.word()
     cantidad = random.randint(1, 100)
 
@@ -252,6 +252,8 @@ for i in range(2000000):
         elif horaInicio not in used_fecha_hora[fecha_ae]:
             used_fecha_hora[fecha_ae].add(horaInicio)
             break
+    monto = round(random.uniform(10000, 40000), 2)
+
 
     actividad_economica.append({
         'pdni': pnrodoc,
@@ -260,7 +262,8 @@ for i in range(2000000):
         'codigo': codigo,
         'descripcion': descripcion,
         'fecha_ae': fecha_ae,
-        'horainicio': horaInicio
+        'horainicio': horaInicio,
+        'monto':monto
     })
 
 df = pd.DataFrame(actividad_economica)
@@ -313,7 +316,7 @@ print('consulta exitoso')
 utiliza = []
 used_combinations = set()
 
-for i in range(1000000):
+for i in range(5000000):
     
     while True:
         enrodoc = random.choice(enfermeras)['pdni']
@@ -325,7 +328,7 @@ for i in range(1000000):
             used_combinations.add(combination)
             break
 
-    cantidad = random.randint(1, 30)
+    cantidad = random.randint(1, 15)
 
     utiliza.append({
         'ocodigo': ocodigo,
@@ -350,7 +353,7 @@ for i in range(2000000):
         if codigo not in used_codigos:
             used_codigos.add(codigo)
             break
-    monto = round(random.uniform(100, 20000), 2)
+    monto = actividad_economica[i]['monto']
     tipo_de_pago = fake.random_element(elements=('Tarjeta de Credito', 'Tarjeta de Debito', 
                                                   'Seguro', 'Efectivo'))
     fecha_pago = fake.date_this_year() 
