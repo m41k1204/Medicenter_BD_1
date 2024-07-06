@@ -16,6 +16,6 @@ def clean_csv(input_file, output_file):
             writer.writerow(new_row)
 
 # Example usage
-input_csv = 'insumos_medicos_millon.csv'
+input_csv = 'insumos_medicos_mil.csv'
 output_csv = 'prueba.csv'
 clean_csv(input_csv, output_csv)

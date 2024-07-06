@@ -1,0 +1,187 @@
+1ra consulta
+
+millon -- sin indices
+
+1ra vez: 20571.106
+2da vez: 23857.599
+3ra vez: 20566.474
+4ta vez: 20696.327
+5ta vez: 20303.165
+
+millon -- con indices
+
+1ra vez: 3879.269
+2da vez: 3711.503
+3ra vez: 3720.472
+4ta vez: 3920.214
+5ta vez: 3800.156
+
+cienmil -- sin indices
+
+1ra vez: 1212.732
+2da vez: 1121.699
+3ra vez: 1141.455
+4ta vez: 1125.272
+5ta vez: 1167.438
+
+cienmil -- con indices
+1ra vez: 294.895
+2da vez: 261.055
+3ra vez: 254.682
+4ta vez: 288.876
+5ta vez: 290.694
+
+diezmil -- sin indices
+
+1ra vez: 143.699
+2da vez: 121.285
+3ra vez: 124.977
+4ta vez: 118.016
+5ta vez: 147.543
+
+diezmil -- con indices
+
+1ra vez: 17.136
+2da vez: 17.006
+3ra vez: 17.022
+4ta vez: 17.071
+5ta vez: 17.580
+
+mil -- sin indices
+
+1ra vez: 15.598
+2da vez: 8.615
+3ra vez: 8.859
+4ta vez: 9.453
+5ta vez: 8.452
+
+mil -- con indices
+
+1ra vez: 2.401
+2da vez: 2.626
+3ra vez: 2.328
+4ta vez: 2.447
+5ta vez: 2.453
+
+2da consulta 
+
+millon -- sin indices
+
+1ra vez: 34765.752
+2da vez: 31866.581
+3ra vez: 39514.342
+4ta vez: 39289.871
+5ta vez: 31295.753
+
+millon -- con indices
+
+1ra vez: 9290.042
+2da vez: 8612.499
+3ra vez: 9013.227
+4ta vez: 9335.573
+5ta vez: 9159.625
+
+cienmil -- sin indices
+
+1ra vez: 1122.879
+2da vez: 1176.591
+3ra vez: 1240.187
+4ta vez: 1144.168
+5ta vez: 1149.567
+
+cienmil -- con indices
+
+1ra vez: 440.765
+2da vez: 379.193
+3ra vez: 403.038
+4ta vez: 370.168
+5ta vez: 393.567
+
+diezmil -- sin indices
+
+1ra vez: 292.691
+2da vez: 164.819
+3ra vez: 170.038
+4ta vez: 177.168
+5ta vez: 170.567
+
+diezmil -- con indices
+
+1ra vez: 28.466
+2da vez: 25.517
+3ra vez: 25.762
+4ta vez: 25.781
+5ta vez: 25.107
+
+mil -- sin indices
+
+1ra vez: 12.142
+2da vez: 12.658
+3ra vez: 12.245
+4ta vez: 11.196
+5ta vez: 12.568
+
+mil -- con indices
+
+1ra vez: 2.750
+2da vez: 2.737
+3ra vez: 2.779
+4ta vez: 2.658
+5ta vez: 2.986
+
+3ra consulta
+
+millon -- sin indices
+
+1ra vez: 15846.654
+2da vez: 16231.456
+3ra vez: 15489.321
+4ta vez: 15568.146
+5ta vez: 15489.398
+
+millon -- con indices
+
+1ra vez: 6900.799
+2da vez: 7000.654
+3ra vez: 6874.589
+4ta vez: 7152.297
+5ta vez: 6982.459
+
+cien mil -- sin indices
+
+1ra vez: 1809.587
+2da vez: 1354.033
+3ra vez: 1405.236
+4ta vez: 1608.071
+5ta vez: 1094.142
+
+cien mil -- con indices
+
+1ra vez: 640.122
+2da vez: 529.247
+3ra vez: 607.954
+4ta vez: 555.892
+5ta vez: 580.078
+
+diez mil -- sin indices
+
+1ra vez: 258.325
+2da vez: 142.570
+3ra vez: 143.568
+4ta vez: 150.478
+5ta vez: 164.587
+
+diez mil -- con indices
+
+1ra vez: 54.933
+2da vez: 40.758
+3ra vez: 40.706
+4ta vez: 45.806
+5ya vez: 43.764
+
+
+
+
+
+
+

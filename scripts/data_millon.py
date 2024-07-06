@@ -9,7 +9,7 @@ unique_documents = set()
 
 # Creacion de personas --------------------------------------------------------
 
-for i in range(6000000):
+for i in range(6000):
     while True:
         nrodocumento = fake.unique.random_number(digits=8)
         if nrodocumento not in unique_documents:
@@ -26,7 +26,7 @@ for i in range(6000000):
     })
 
 df = pd.DataFrame(personas)
-df.to_csv('personas_millon.csv', index=False)
+df.to_csv('personas_mil.csv', index=False)
 print('personas creadas')
 
 
@@ -47,7 +47,7 @@ especialidades = [
 ]
 
 
-for i in range(1000000):
+for i in range(1000):
 
     sueldo = round(random.uniform(30000, 300000), 2)
     especialidad = random.choice(especialidades)
@@ -59,14 +59,14 @@ for i in range(1000000):
     })
 
 df = pd.DataFrame(doctores)
-df.to_csv('doctor_millon.csv', index=False)
+df.to_csv('doctor_mil.csv', index=False)
 print('doctor exitoso')
 
 # Creacion de interno -------------------------------------------------------
 
 internos = []
 
-for i in range(1000000,2000000):
+for i in range(1000,2000):
     sueldo = round(random.uniform(1025, 3000), 2)
 
     internos.append({
@@ -75,14 +75,14 @@ for i in range(1000000,2000000):
     })
 
 df = pd.DataFrame(internos)
-df.to_csv('internos_millon.csv', index=False)
+df.to_csv('internos_mil.csv', index=False)
 print('internos exitoso')
 
 # Creacion de enfermera -----------------------------------------------------
 
 enfermeras = []
 
-for i in range(2000000, 3000000):
+for i in range(2000, 3000):
     sueldo = round(random.uniform(3000, 6000), 2)
 
     enfermeras.append({
@@ -91,14 +91,14 @@ for i in range(2000000, 3000000):
     })
 
 df = pd.DataFrame(enfermeras)
-df.to_csv('enfermeras_millon.csv', index=False)
+df.to_csv('enfermeras_mil.csv', index=False)
 print('enfermeras exitoso')
 
 # Creacion de secretaria ----------------------------------------------------
 
 secretarias = []
 
-for i in range(3000000, 4000000):
+for i in range(3000, 4000):
 
     sueldo = round(random.uniform(2000, 5000), 2)
 
@@ -108,14 +108,14 @@ for i in range(3000000, 4000000):
     })
 
 df = pd.DataFrame(secretarias)
-df.to_csv('secretarias_millon.csv', index=False)
+df.to_csv('secretarias_mil.csv', index=False)
 print('secretarias exitoso')
 
 # Creacion de gerente ------------------------------------------------------
 
 gerentes = []
 
-for i in range(4000000, 5000000):
+for i in range(4000, 5000):
 
     sueldo = round(random.uniform(15000, 30000), 2)
 
@@ -125,7 +125,7 @@ for i in range(4000000, 5000000):
     })
 
 df = pd.DataFrame(gerentes)
-df.to_csv('gerentes_millon.csv', index=False)
+df.to_csv('gerentes_mil.csv', index=False)
 print('gerentes exitoso')
 
 
@@ -133,7 +133,7 @@ print('gerentes exitoso')
 
 pacientes = []
 
-for i in range(5000000, 6000000):
+for i in range(5000, 6000):
     nrodocumento = personas[i]['dni']
 
     pacientes.append({
@@ -141,7 +141,7 @@ for i in range(5000000, 6000000):
     })
 
 df = pd.DataFrame(pacientes)
-df.to_csv('pacientes_millon.csv', index=False)
+df.to_csv('pacientes_mil.csv', index=False)
 print('pacientes exitoso')
 
 
@@ -149,7 +149,7 @@ print('pacientes exitoso')
 insumos_medicos = []
 insumos_codigos = set()
 
-for i in range(1000000):
+for i in range(1000):
     while True:
         codigo = fake.unique.random_number(digits=10)
         if codigo not in insumos_codigos:
@@ -171,13 +171,13 @@ for i in range(1000000):
     })
 
 df = pd.DataFrame(insumos_medicos)
-df.to_csv('insumos_medicos_millon.csv', index=False)
+df.to_csv('insumos_medicos_mil.csv', index=False)
 print('insumos_medicos exitoso')
 
 # Creacion de Pedido
 pedidos = []
 
-for i in range(1000000):
+for i in range(1000):
     while True:
         codigo = fake.unique.random_number(digits=10)
         if codigo not in insumos_codigos:  # ensure unique order codes
@@ -193,7 +193,7 @@ for i in range(1000000):
     })
 
 df = pd.DataFrame(pedidos)
-df.to_csv('pedidos_millon.csv', index=False)
+df.to_csv('pedidos_mil.csv', index=False)
 print('pedido exitoso')
 
 # Creacion de detallePedido
@@ -210,7 +210,7 @@ def escogerInsumoMedico():
             insumos_utilizados.add(insumoMedico['nro_serial'])
             return insumoMedico['nro_serial']
 
-for i in range(1000000):
+for i in range(1000):
     pcodigo = escogerPedido()
     insumoMedico = escogerInsumoMedico()
     cantidad = random.randint(1, 100)
@@ -222,7 +222,7 @@ for i in range(1000000):
     })
 
 df = pd.DataFrame(detallePedido)
-df.to_csv('detallePedido_millon.csv', index=False)
+df.to_csv('detallePedido_mil.csv', index=False)
 print('detallePedido exitoso')
 
 # Creacion de actividad_economica ----------------------------
@@ -231,7 +231,7 @@ actividad_economica = []
 used_codigos = set()
 used_fecha_hora = {}
 
-for i in range(2000000):
+for i in range(2000):
     while True:
         codigo = fake.unique.random_number(digits=10)
         if codigo not in used_codigos:
@@ -267,14 +267,14 @@ for i in range(2000000):
     })
 
 df = pd.DataFrame(actividad_economica)
-df.to_csv('actividad_economica_millon.csv', index=False)
+df.to_csv('actividad_economica_mil.csv', index=False)
 print('actividad_economica exitoso')
 
 # Creacion de operacion -----------------------------------
 
 operaciones = []
 
-for i in range(1000000):
+for i in range(1000):
     aecodigo = actividad_economica[i]['codigo']
     enrodoc = random.choice(enfermeras)['pdni']
     tipo_operacion = fake.word()
@@ -287,16 +287,16 @@ for i in range(1000000):
 
 
 df = pd.DataFrame(operaciones)
-df.to_csv('operaciones_millon.csv', index=False)
+df.to_csv('operaciones_mil.csv', index=False)
 print('operacion exitoso')
 
 # Creacion de consulta
 
 consulta = []
 
-for i in range(1000000,2000000):
+for i in range(1000,2000):
     aecodigo = actividad_economica[i]['codigo']
-    n = i-1000000
+    n = i-1000
     snrodoc = secretarias[n]['pdni']
     tipo_operacion = fake.word()
 
@@ -308,7 +308,7 @@ for i in range(1000000,2000000):
 
 
 df = pd.DataFrame(consulta)
-df.to_csv('consulta_millon.csv', index=False)
+df.to_csv('consulta_mil.csv', index=False)
 print('consulta exitoso')
 
 # Creacion de utiliza 
@@ -316,7 +316,7 @@ print('consulta exitoso')
 utiliza = []
 used_combinations = set()
 
-for i in range(5000000):
+for i in range(5000):
     
     while True:
         enrodoc = random.choice(enfermeras)['pdni']
@@ -338,7 +338,7 @@ for i in range(5000000):
     })
 
 df = pd.DataFrame(utiliza)
-df.to_csv('utiliza_millon.csv', index=False)
+df.to_csv('utiliza_mil.csv', index=False)
 print('utiliza exitoso')
 
 # Creacion de pago
@@ -346,7 +346,7 @@ print('utiliza exitoso')
 pago = []
 used_codigos = set()
 
-for i in range(2000000):
+for i in range(2000):
     aecodigo = actividad_economica[i]['codigo']
     while True:
         codigo = fake.unique.random_number(digits=10)
@@ -367,5 +367,5 @@ for i in range(2000000):
     })
 
 df = pd.DataFrame(pago)
-df.to_csv('pago_millon.csv', index=False)
+df.to_csv('pago_mil.csv', index=False)
 print('pago exitoso')
