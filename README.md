@@ -1,4 +1,5 @@
 # Proyecto de fin de Curso - Base de Datos 1 (CS 2041)
+# Modelado de una base de datos en PostgreSQL
 
 ## Este proyecto tiene el objetivo de modelar desde cero una base de datos y tras poblarla con datos ficticios, experimentar sobre ella con consultas que permitan entender las diversas formas en las que se pueden optimizar y de la ayuda de ```Explain Analyze``` entender el proceso que hace PostgreSQL cada vez que corre una consulta.
 
