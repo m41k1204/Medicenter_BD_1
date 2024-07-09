@@ -1,6 +1,6 @@
-# Medicenter_BD_1
+# Proyecto de fin de Curso - Base de Datos 1 (CS 2041)
 
-## Este es un modelado de una base de datos para un policlínico en PostgreSQL
+## Este proyecto tiene el objetivo de modelar desde cero una base de datos y tras poblarla con datos ficticios, experimentar sobre ella con consultas que permitan entender las diversas formas en las que se pueden optimizar y de la ayuda de ```Explain Analyze``` entender el proceso que hace PostgreSQL cada vez que corre una consulta.
 
 Para inicializar la data en la base de datos seguir las siguientes instrucciones:
 1. Inicializar la base de datos con el archivo database.sql en utils -> database.sql
